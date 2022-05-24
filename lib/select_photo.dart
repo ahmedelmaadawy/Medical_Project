@@ -181,11 +181,11 @@ class _ChoosePhotoState extends State<ChoosePhoto> {
                               ),
                             );
                           } else {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => AfterResult()),
-                            );
+                            // Navigator.push(
+                            //   context,
+                            //   MaterialPageRoute(
+                            //       builder: (context) =>)),
+                            // );
                           }
                         },
                         child: Text(

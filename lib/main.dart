@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:medical_project/after_result.dart';
+import 'package:medical_project/animia_result.dart';
 import 'package:medical_project/generated/codegen_loader.g.dart';
 import 'package:medical_project/home_screen.dart';
 import 'package:medical_project/select_photo.dart';

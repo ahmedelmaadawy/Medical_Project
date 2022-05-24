@@ -7,6 +7,7 @@ import 'package:flutter/rendering.dart';
 import 'package:medical_project/check_disease.dart';
 import 'package:medical_project/drawer.dart';
 import 'package:medical_project/select_photo.dart';
+import 'package:medical_project/test_values.dart';
 import './generated/locale_keys.g.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -159,7 +160,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     context,
                     MaterialPageRoute(
                         builder: (context) =>
-                            ismedicaltest ? ChoosePhoto() : Selectdisease()),
+                            ismedicaltest ? TestValues() : Selectdisease()),
                   );
                 },
                 child: Text(

@@ -1,8 +1,10 @@
 // ignore_for_file: prefer_const_constructors, sized_box_for_whitespace
 
 import 'package:flutter/material.dart';
+import 'package:medical_project/test_values.dart';
 
-Widget buildResulItem() => Padding(
+
+Widget buildResulItem(ResultModel results) => Padding(
       padding: const EdgeInsets.all(10.0),
       child: Container(
         width: double.infinity,
@@ -15,7 +17,7 @@ Widget buildResulItem() => Padding(
                 width: 100.0,
                 child: Center(
                   child: Text(
-                    'WBC',
+                    results.name,
                     style: TextStyle(fontSize: 20.0),
                   ),
                 ),
@@ -25,7 +27,7 @@ Widget buildResulItem() => Padding(
               width: 100.0,
               child: Center(
                 child: Text(
-                  '7.9',
+                  results.value.toString(),
                   style: TextStyle(fontSize: 20.0),
                 ),
               ),
@@ -39,7 +41,7 @@ Widget buildResulItem() => Padding(
                     textDirection: TextDirection.rtl,
                     child: Center(
                       child: Text(
-                        'كرات الدم البيضاء',
+                        results.translation,
                         style: TextStyle(fontSize: 15.0),
                       ),
                     ),
